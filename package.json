@@ -7,6 +7,7 @@
     "test": "npm run karma && npm run mocha",
     "start": "nodemon ./lib/server.js",
     "dev": "NODE_ENV=development nodemon ./lib/server.js",
+    "jspm": "jspm",
     "dev_db_create": "createdb fswd_seed_development && sequelize db:migrate",
     "dev_db_connect": "psql fswd_seed_development",
     "test_db_create": "createdb fswd_seed_test",
@@ -18,7 +19,6 @@
     "test-server": "NODE_ENV=test PORT=8008 nodemon ./lib/server.js",
     "protractor-backend": "npm run webdriver & npm run test-server",
     "protractor": "protractor ./protractor.config.js",
-
     "lint": "eslint ."
   },
   "keywords": [
@@ -57,6 +57,7 @@
     "lodash": "^4.13.1",
     "nodemon": "^1.9.2",
     "pg": "^6.0.3",
+    "request": "^2.81.0",
     "sequelize": "^3.23.6",
     "sequelize-cli": "^2.4.0"
   },
@@ -67,7 +68,8 @@
     "dependencies": {
       "angular": "github:angular/bower-angular@^1.5.8",
       "angular-route": "github:angular/bower-angular-route@^1.5.8",
-      "lodash": "npm:lodash@^4.13.1"
+      "lodash": "npm:lodash@^4.13.1",
+      "moment": "npm:moment@^2.18.1"
     },
     "devDependencies": {
       "angular-mocks": "github:angular/bower-angular-mocks@^1.5.8"

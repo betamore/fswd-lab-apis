@@ -12,6 +12,7 @@ System.config({
     "angular-mocks": "github:angular/bower-angular-mocks@1.5.8",
     "angular-route": "github:angular/bower-angular-route@1.5.8",
     "lodash": "npm:lodash@4.13.1",
+    "moment": "npm:moment@2.18.1",
     "github:angular/bower-angular-mocks@1.5.8": {
       "angular": "github:angular/bower-angular@1.5.8"
     },

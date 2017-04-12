@@ -1,0 +1,11 @@
+extends ./layout.jade
+
+block body
+  div(ng-controller="NgMapCtrl as $ctrl")
+    | API Playground
+    | Zipcode:
+    input(ng-model="$ctrl.zipcode")
+    | Hour:
+    input(ng-model="$ctrl.hour")
+    button(ng-click="$ctrl.addMarker()") Add
+    div(ng-map="" marker="$ctrl.marker" style="height:400px;")
